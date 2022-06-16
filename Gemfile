@@ -14,7 +14,7 @@ gem 'puma', '~> 3.11'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -28,6 +28,10 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
+
+# Json web token
+gem 'jwt'
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'byebug'
@@ -37,7 +41,7 @@ group :test do
   gem 'factory_bot_rails', '~> 4.0'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'database_cleaner'
-  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+  gem 'faker'
 end
 
 group :development do
